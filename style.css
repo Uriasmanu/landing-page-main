@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&family=Roboto+Slab&display=swap');
 
 body{
     margin: 0;
@@ -9,8 +10,14 @@ body{
     height: 100%;
     border-bottom-left-radius: 92px;
     text-align: center;
-}
+    font-family: 'Overpass', sans-serif;
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(/images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: 203%;
+    background-position: 29%;
 
+}
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -19,5 +26,29 @@ body{
     margin: 0 4%;
 }
 
+.titulo1{
+    font-weight: 600;
+    font-size: 29px;
+}
 
+.menu__textos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0;
+    gap: 10px;
 
+}
+
+.menu__textos:nth-child(1){
+    font-size: 38px;
+
+}
+
+.button{
+    width: 95px;
+    height: 33px;
+    border-radius: 19px;
+    border: none;
+    font-size: 11px;
+}
