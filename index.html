@@ -9,7 +9,6 @@
   
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,44 +17,53 @@
 <body>
   <header class="cabecalho">
     
-      <nav class="menu">
+      <section class="menu__itens">
         <h2 class="titulo1">Blogr</h2>
+        
+        <nav>
+          <ul class="menu">
+            <li class="dropdown">Product
+              <ul class="submenu" style="display:none;">
+                <li >Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </li>
+            <li class="dropdown">Company
+              <ul class="submenu" style="display:none;">
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+            <li class="dropdown">Connect
+              <ul class="submenu" style="display:none;">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="logins">
+          <button class="button login">Login</button>
+          <button class="button sign">Sign Up</button>
+      </div>
+      
+    </section>
 
-        <ul>
-          <li>Product</li>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
-        </ul>
-      
-        <ul>
-          <li>Company</li>
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul>
-      
-        <ul>
-          <li>Connect</li>
-          <li>Contact</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
-        </ul>
-      
-        <button class="button login">Login</button>
-        <button class="button sign">Sign Up</button>
-      
-    </nav>
     <div class="menu__textos">
+      
       <h1 class="menu__textos">A modern publishing platform</h1>
       <p class="menu__textos">Grow your audience and build your online brand</p>
-      
+
     </div>
+
     <button class="button start">Start for Free</button>
-    <button class="button learn">Learn More</button>
+    <button class="learn">Learn More</button>
   </header>
   <main>
     <section>

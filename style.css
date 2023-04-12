@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&family=Roboto+Slab&display=swap');
 
+/* general styles */
 body{
     margin: 0;
 }
+
+/* header styles */
 .cabecalho{
     box-sizing: border-box;
-    border: 1px solid black;
     width: 100%;
-    height: 100%;
+    height: 387px;
     border-bottom-left-radius: 92px;
     text-align: center;
     font-family: 'Overpass', sans-serif;
@@ -16,33 +18,106 @@ body{
     color: #fff;
     background-size: 203%;
     background-position: 29%;
-
 }
+
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    gap: 16px;
+    justify-content: flex-start;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    padding: 1px;
+    background: #ffffff57;
+}
+
+.menu__itens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    gap: 27px;
     margin: 0 4%;
+    padding-top: 10px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logins{
+    display: flex;
+    margin-left: auto;
+}
+
+.login{
+    background: none;
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+}
+
+.sign, .start{
+    background: #fff;
+    color: hsl(13, 99%, 69%);
+    font-weight: bold;
 }
 
 .titulo1{
     font-weight: 600;
     font-size: 29px;
+    margin-right: 51px;
+    margin-left: 32px;
 }
 
 .menu__textos{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 0;
+    margin: -36px 0;
     gap: 10px;
+    margin-top: 3%;
+    text-align: center;
+}
 
+.submenu li{
+    font-size: 14px;
+}
+
+.menu__textos p {
+    margin-bottom: 10px;
+}
+
+.learn{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 95px;
+    height: 33px;
+    border-radius: 19px;
+    font-size: 12px;
+}
+
+.start, .learn {
+    margin-top: 48px;
+    margin-left: 14px;
 }
 
 .menu__textos:nth-child(1){
-    font-size: 38px;
-
+    font-size: 47px;
 }
 
 .button{
@@ -50,5 +125,5 @@ body{
     height: 33px;
     border-radius: 19px;
     border: none;
-    font-size: 11px;
+    font-size: 12px;
 }
