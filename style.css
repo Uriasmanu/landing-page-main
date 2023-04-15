@@ -3,6 +3,9 @@
 /* general styles */
 body{
     margin: 0;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+
 }
 
 /* header styles */
@@ -126,4 +129,43 @@ nav ul{
     border-radius: 19px;
     border: none;
     font-size: 12px;
+}
+.textos__2{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 7%;
+    justify-content: space-between;
+    align-items: center;
+    gap:10%;
+}
+.subtitulo__1{
+    position:absolute;
+    top: 480px;
+    left: 40%;    
+    color:hsl(208, 49%, 24%);
+}
+
+.subtitulo__2{
+    margin-top: 5%;
+    color:hsl(208, 49%, 24%);
+    font-size: 21px;
+
+
+}
+
+.descicao{
+    width: 500px;
+    color:hsl(207, 13%, 34%);
+    font-size: 15px;
+
+}
+
+.imagem1 {
+    width: 700px;
+    height: 679px;
+}
+
+.imagem2{
+    width: 600px;
+    height: 579px;
 }
