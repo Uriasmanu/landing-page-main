@@ -56,7 +56,7 @@ body{
     padding-top: 10px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -133,7 +133,7 @@ nav ul{
 .textos__2{
     display: flex;
     margin-left: 7%;
-    margin-top: 7%;
+    margin: 10%;
     justify-content: space-between;
     align-items: center;
     gap:10%;
@@ -146,14 +146,14 @@ nav ul{
 }
 
 .subtitulo__2{
-    margin-top: 5%;
+    margin-top: 12%;
     color:hsl(208, 49%, 24%);
     font-size: 21px;
 
 
 }
 
-.descicao{
+.descricao{
     width: 500px;
     color:hsl(207, 13%, 34%);
     font-size: 15px;
@@ -161,11 +161,115 @@ nav ul{
 }
 
 .imagem1 {
-    width: 700px;
-    height: 679px;
+    max-width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 62%;
+    
 }
 
 .imagem2{
     width: 600px;
     height: 579px;
+    margin-left: 4%;
+    margin-top: 3%;
+
+}
+
+.divisao{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    height: 61vh;
+    background: hsl(238,21%,29%);
+    background-image: url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: -32% 83%;
+    border-top-right-radius: 92px;
+    border-bottom-left-radius: 92px;
+
+
+}
+.textos__3{
+    width: 520px;
+}
+.subtitulo__3{
+    color:#fff;
+    font-size: 29px;
+
+}
+
+.divisao__descricao{
+    color:hsl(202, 7%, 67%);
+
+}
+
+.textos__4{
+    width: 100%;
+    display: flex;
+    margin-top: 11%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 24%;
+
+}
+.imagem3{
+    position: absolute;
+    left: 0;
+    width: 709px;
+    height: 568px;
+    margin-left: -16%;
+}
+
+.rodape{
+    display: flex;
+    align-items: flex-start;
+    gap: 2%;
+    width: 100%;
+    height: 50vh;
+    background: hsl(240, 10%, 16%);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: -32% 83%;
+    border-top-right-radius: 92px;
+    color: #fff;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    position: relative;
+     bottom: 0;
+}
+
+.rodape__itens{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 3%;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.topicos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.subtopicos{
+    margin-top: 20%;
+    font-size: 11px;
+}
+.titulo5{
+    font-weight: 600;
+    font-size: 29px;
+    margin-right: 51px;
+    margin-left: 32px;
+    position: relative;
+    top: 8%;
+    left: 8%;
 }
