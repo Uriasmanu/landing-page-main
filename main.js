@@ -1,4 +1,4 @@
-function adjustStyle() {
+/*function adjustStyle() {
   var screenWidth = window.innerWidth;
   if (screenWidth < 500) {
     var linkElement = document.getElementById('style-desktop');
@@ -25,10 +25,10 @@ function adjustStyle() {
     link.href = 'style.css';
     head.appendChild(link);
   }
-}
+}*/
 
 function updateCSS() {
-  var css = document.getElementById("css");
+  var css = document.getElementById("estilo");
   if (window.innerWidth < 500) {
     css.href = "mobile.css";
   } else {
