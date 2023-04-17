@@ -1,22 +1,35 @@
-function trocarEstilo() {
-  var largura = window.innerWidth;
-  var estilo = document.getElementById("estilo");
-
-  if (largura < 500) {
-    estilo.href = "mobile.css";
+function adjustStyle() {
+  var screenWidth = window.innerWidth;
+  if (screenWidth < 500) {
+    var linkElement = document.getElementById('style-desktop');
+    if (linkElement) {
+      linkElement.parentNode.removeChild(linkElement);
+    }
+    var head = document.head || document.getElementsByTagName('head')[0];
+    var link = document.createElement('link');
+    link.id = 'style-mobile';
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'mobile.css';
+    head.appendChild(link);
   } else {
-    estilo.href = "style.css";
-  }
-
-  if (largura < 500 && estilo.href.includes("mobile.css")) {
-    estilo.disabled = true;
-  } else {
-    estilo.disabled = false;
+    var linkElement = document.getElementById('style-mobile');
+    if (linkElement) {
+      linkElement.parentNode.removeChild(linkElement);
+    }
+    var head = document.head || document.getElementsByTagName('head')[0];
+    var link = document.createElement('link');
+    link.id = 'style-desktop';
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'style.css';
+    head.appendChild(link);
   }
 }
 
-window.addEventListener("load", trocarEstilo);
-window.addEventListener("resize", trocarEstilo);
+window.onload = adjustStyle;
+window.onresize = adjustStyle;
+
 
 
     // verifica o tamanho da tela no início do carregamento da página
