@@ -27,6 +27,17 @@ function adjustStyle() {
   }
 }
 
+function updateCSS() {
+  var css = document.getElementById("css");
+  if (window.innerWidth < 500) {
+    css.href = "mobile.css";
+  } else {
+    css.href = "style.css";
+  }
+}
+window.addEventListener("resize", updateCSS);
+updateCSS();
+
 window.onload = adjustStyle;
 window.onresize = adjustStyle;
 
