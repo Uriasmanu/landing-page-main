@@ -101,7 +101,9 @@ nav ul {
     margin-top: 3%;
     text-align: center;
 }
-
+input, label{
+    display:none;
+}
 .submenu li{
     font-size: 14px;
 }
